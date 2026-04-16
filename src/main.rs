@@ -1,0 +1,24 @@
+use std::collections::HashMap;
+
+fn main() {
+    // Vector dinámico
+    let mut numeros = Vec::new();
+    numeros.push(10);
+    numeros.push(20);
+    numeros.push(30);
+
+    println!("Vector:");
+    for n in &numeros {
+        println!("{}", n);
+    }
+
+    // HashMap (clave-valor)
+    let mut edades = HashMap::new();
+    edades.insert("Ana", 25);
+    edades.insert("Luis", 30);
+
+    println!("\nHashMap:");
+    for (nombre, edad) in &edades {
+        println!("{} tiene {} años", nombre, edad);
+    }
+}
