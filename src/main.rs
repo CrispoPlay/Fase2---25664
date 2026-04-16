@@ -3,13 +3,13 @@ use std::collections::HashMap;
 fn main() {
     // Vector dinámico
     let mut numeros = Vec::new();
-    numeros.push(10);
-    numeros.push(20);
-    numeros.push(30);
+    for i in 0..30 {
+        numeros.push(i);
+    }
 
     println!("Vector:");
     for n in &numeros {
-        println!("{}", n);
+        print!("{} - ", n);
     }
 
     // HashMap (clave-valor)
